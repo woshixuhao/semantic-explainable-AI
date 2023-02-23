@@ -236,8 +236,8 @@ class lime_GA():
 
 
 def validate():
-    image_best_save=torch.from_numpy(np.load(f'lime_save/lime_cat_500_324.npy').astype(np.float32))
-    image_origin_save=torch.from_numpy(np.load(f'lime_save/lime_cat_500_origin_324.npy').astype(np.float32))
+    image_best_save=torch.from_numpy(np.load(f'lime_save/lime_{self.animal}_{self.picture_num}_{config.torch_seed}.npy').astype(np.float32))
+    image_origin_save=torch.from_numpy(np.load(f'lime_save/lime_{self.animal}_{self.picture_num}_origin_{config.torch_seed}.npy').astype(np.float32))
     print(use_model(image_best_save.cuda())[0])
     print(use_model(image_origin_save.cuda())[0])
     for i in range(20):

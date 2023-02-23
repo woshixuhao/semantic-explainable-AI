@@ -9,8 +9,8 @@ https://drive.google.com/file/d/1VshtrPKOm4e5czbjAjQKJjtWZPRBRJN0/view?usp=share
 # Note
 If the program raise the error that do not find certain file, please run some functions first to generate relevant files.
 For example, if there is error in the S-XAI.py, one can try these functions to generate required files.
-get_inverse_position(conv_out_2_0)
-cut_position(use_model)
+/get_inverse_position(conv_out_2_0)
+/cut_position(use_model)
 sort_index_origin,sort_index_position,space_index,space_value=get_position(conv_out_2_0,5,show_picture=True)
 plot_distribution(space_index,space_value,picture='small')
 print_word(conv_out_2_0,512)
